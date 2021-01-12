@@ -1,6 +1,6 @@
 import Home from './pages/home';
-import Header from './componets/heder';
-import Cart from './pages-router-dom';
+import Header from './components/header';
+import Cart from './pages/cart';
 import { Route } from 'react-router-dom';
 import './scss/app.scss';
 function App() {
@@ -8,10 +8,11 @@ function App() {
     <div className='App'>
       <div className='wrapper'>
         <Header />
-        <Route exat path='/' component={Home} />
+        <Route exact path='/' component={Home} />
         <Route path='/cart' component={Cart} />
       </div>
     </div>
-  )
+  );
 }
+
 export default App;
